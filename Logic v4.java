@@ -66,7 +66,7 @@ public class Logic {
 		FilterVO tmpFilterVO = null;
 		for (FilterVO lst1VO : lst1) { 
 			for (FilterVO lst2VO : lst2) { 
-				if(lst1VO.getMIL_FIN().equals(lst2VO.getMIL_DEB())){ 
+				if(lst1VO.getMIL_FIN().equals(lst2VO.getMIL_DEB())){ // include MTC equal check here
 					if(!mtcSmplificationLst.isEmpty() && mtcSmplificationLst.size()>0){
 					tmpFilterVO = mtcSmplificationLst.get(mtcSmplificationLst.size()-1);
 					}
